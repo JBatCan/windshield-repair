@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="cagxzWRPIPGD4Mm2jwWWdyjdZYNZ_EhYpFAIZYjvk6s" />
@@ -63,16 +61,19 @@
                 min-height: 80vh;
             }
             /* Adjust header for mobile */
+            .header-logo {
+                height: 3rem; /* h-12 */
+            }
             .header-title {
-    font-size: 0.875rem; /* text-sm */
-    margin-right: 0.25rem; /* mr-1 */
-}
+                font-size: 0.875rem; /* text-sm */
+                margin-right: 0.25rem; /* mr-1 */
             }
             .nav-list {
                 flex-wrap: wrap;
                 gap: 0.5rem; /* space-x-2 equivalent */
                 font-size: 0.875rem; /* text-sm */
             }
+        }
     </style>
 </head>
 <body>
@@ -88,6 +89,7 @@
                 <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
                 <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
                 <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+                <li><a href="https://auto-glass-america.careerplug.com/j/02hrzda" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition">Careers</a></li>
             </ul>
         </nav>
     </header>
@@ -117,17 +119,6 @@
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
                     <h3 class="text-xl font-semibold text-blue-900 mb-3">Mobile Service</h3>
                     <p class="text-gray-600">We come to you for convenient repairs at your location.</p>
-                </div>
-            </div>
-            <div class="mt-12 text-center">
-                <h3 class="text-xl font-semibold text-blue-900 mb-4">Our Partner</h3>
-                <div class="flex justify-center items-center space-x-4">
-                    <a href="https://www.nuvisionautoglass.com" target="_blank" rel="noopener noreferrer">
-                        <img src="./Nuvision.jpg" alt="NUVISION Auto Glass Partner" class="h-12 w-auto hover:opacity-80 transition" loading="lazy">
-                    </a>
-                    <a href="https://www.nuvisionautoglass.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                        NUVISION Auto Glass
-                    </a>
                 </div>
             </div>
         </div>
@@ -181,6 +172,17 @@
     <!-- Footer -->
     <footer class="bg-blue-900 text-white text-center py-6">
         <p>© 2025 Pinnacle Solutions Marketing Inc. All rights reserved.</p>
+        <div class="mt-4">
+            <h3 class="text-lg font-semibold mb-2">Our Partner</h3>
+            <div class="flex justify-center items-center space-x-4">
+                <a href="https://www.nuvisionautoglass.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./Nuvision.jpg" alt="NUVISION Auto Glass Partner" class="h-8 w-auto hover:opacity-80 transition" loading="lazy">
+                </a>
+                <a href="https://www.nuvisionautoglass.com" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:underline">
+                    NUVISION Auto Glass
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script>
