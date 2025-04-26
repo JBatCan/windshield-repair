@@ -58,6 +58,21 @@
             #hero {
                 min-height: 80vh;
             }
+            /* Adjust header for mobile */
+            .header-logo {
+                height: 2.5rem; /* h-10 */
+            }
+            .header-title {
+                font-size: 1rem; /* text-lg */
+            }
+            .header-logo-container {
+                margin-right: 1rem; /* mr-4 */
+            }
+            .nav-list {
+                flex-wrap: wrap;
+                gap: 0.5rem; /* space-x-2 equivalent */
+                font-size: 0.875rem; /* text-sm */
+            }
         }
     </style>
 </head>
@@ -65,11 +80,11 @@
     <!-- Navigation -->
     <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white fixed w-full top-0 z-50 shadow-lg">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="./pinnacle-logo.png" alt="Pinnacle Solutions Marketing Inc. Logo" class="h-12 w-auto mr-3" loading="lazy">
-                <h1 class="text-xl font-bold">Pinnacle Solutions Marketing Inc.</h1>
+            <div class="flex items-center header-logo-container">
+                <img src="./pinnacle-logo.png" alt="Pinnacle Solutions Marketing Inc. Logo" class="h-12 w-auto header-logo" loading="lazy">
+                <h1 class="text-xl font-bold header-title">Pinnacle Solutions Marketing Inc.</h1>
             </div>
-            <ul class="flex space-x-6">
+            <ul class="flex space-x-6 nav-list">
                 <li><a href="#hero" class="hover:text-yellow-300 transition">Home</a></li>
                 <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
                 <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
